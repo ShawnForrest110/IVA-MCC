@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WaypointManagerActivity">
+
+    <ImageView
+        android:id="@+id/moonMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/moonnavtest" />
+
+    <TextView
+        android:id="@+id/presets_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/moonMap"
+        app:layout_constraintLeft_toRightOf="@id/guideline2"
+        android:text="Presets:"
+        />
+
+    <Spinner
+        android:id="@+id/presets_spinner"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/presets_choices"
+        android:background="@color/selectorBackground"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@id/moonMap"
+        app:layout_constraintLeft_toRightOf="@id/presets_text"/>
+
+    <View
+        android:id="@+id/separator_one"
+        android:layout_width="250dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/selectorBackground"
+        app:layout_constraintTop_toBottomOf="@id/presets_spinner"
+        app:layout_constraintLeft_toRightOf="@id/guideline2"/>
+
+    <TextView
+        android:id="@+id/presets_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/separator_one"
+        app:layout_constraintLeft_toRightOf="@id/guideline2"
+        android:text="Preset Locations:"
+        />
+
+    <Button
+        android:id="@+id/preset_base"
+        android:layout_width="125sp"
+        android:layout_height="wrap_content"
+        android:text="[ Base ]"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10sp"
+        android:background="@color/presetButton"
+        app:layout_constraintLeft_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/presets_buttons"/>
+
+    <Button
+        android:id="@+id/preset_rover"
+        android:layout_width="125sp"
+        android:layout_height="wrap_content"
+        android:text="[ Rover ]"
+        android:layout_marginLeft="10sp"
+        android:background="@color/presetButton"
+        app:layout_constraintLeft_toRightOf="@id/preset_base"
+        app:layout_constraintTop_toTopOf="@id/preset_base"/>
+
+    <Button
+        android:id="@+id/preset_samplesite"
+        android:layout_width="125sp"
+        android:layout_height="wrap_content"
+        android:text="[ Sample Site ]"
+        android:layout_marginLeft="10sp"
+        android:background="@color/presetButton"
+        app:layout_constraintLeft_toRightOf="@id/preset_rover"
+        app:layout_constraintTop_toTopOf="@id/preset_rover"/>
+
+    <View
+        android:id="@+id/separator_two"
+        android:layout_width="250dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/selectorBackground"
+        app:layout_constraintTop_toBottomOf="@id/preset_base"
+        app:layout_constraintLeft_toRightOf="@id/guideline2"/>
+
+    <TextView
+        android:id="@+id/candidateWaypointLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Candidate Waypoint"
+        android:textSize="20sp"
+        android:layout_marginTop="30sp"
+        app:layout_constraintTop_toBottomOf="@id/separator_two"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <TextView
+        android:id="@+id/xView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0.5"
+        android:text="X: "
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/candidateWaypointLabel" />
+
+    <TextView
+        android:id="@+id/xPos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text=""
+        android:width="125sp"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/xView"
+        app:layout_constraintTop_toTopOf="@+id/xView" />
+
+    <TextView
+        android:id="@+id/yView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="Y: "
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/xPos"
+        app:layout_constraintTop_toTopOf="@+id/xView" />
+
+    <TextView
+        android:id="@+id/yPos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_weight="0.5"
+        android:text=""
+        android:width="125sp"
+        app:layout_constraintStart_toEndOf="@+id/yView"
+        app:layout_constraintTop_toTopOf="@+id/yView" />
+
+    <View
+        android:id="@+id/separator_three"
+        android:layout_width="250dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/selectorBackground"
+        app:layout_constraintTop_toBottomOf="@id/yView"
+        app:layout_constraintLeft_toRightOf="@id/guideline2"/>
+
+    <LinearLayout
+        android:id="@+id/candidate_coordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/separator_three"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        android:layout_marginTop="15sp">
+
+        <Button
+            android:id="@+id/setWaypointBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Waypoint"
+            android:textAlignment="center"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/clearWaypointsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear Waypoints"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/closeMapBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/waypointListLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waypoints"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="15sp"
+        app:layout_constraintTop_toBottomOf="@id/candidate_coordinates"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/waypoints_list"
+        android:layout_width="wrap_content"
+        android:layout_height="200sp"
+        android:minHeight="50dp"
+        android:minWidth="300dp"
+        android:background="@color/lightBackground"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/waypointListLabel"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

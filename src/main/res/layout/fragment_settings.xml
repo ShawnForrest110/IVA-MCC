@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment"
+    android:orientation="vertical">
+
+    <!-- Settings for ARGOS -->
+
+    <TextView
+        android:id="@+id/textViewArgos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ARGOS IP"
+        android:textSize="30sp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/ip_argos_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:hint="URL for ARGOS"/>
+
+    <Button
+        android:id="@+id/applyArgos_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Update ARGOS Address" />
+
+    <!-- Settings for xEMU-0 -->
+
+    <View
+        android:id="@+id/divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="3sp"
+        android:layout_marginTop="16sp"
+        android:background="?android:attr/listDivider"/>
+
+    <TextView
+        android:id="@+id/textViewXemu0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xEMU-0 IP"
+        android:textSize="30sp"
+        android:textAlignment="center"/>
+
+
+    <EditText
+        android:id="@+id/ip_xemu0_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:hint="IP # xEMU-0 Here"
+        />
+
+    <Button
+        android:id="@+id/applyXemu0_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:text="Update xEMU-0 Address" />
+
+    <!-- Settings for xEMU-1 -->
+
+    <View
+        android:id="@+id/divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="3sp"
+        android:layout_marginTop="16sp"
+        android:background="?android:attr/listDivider"/>
+
+    <TextView
+        android:id="@+id/textViewXemu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xEMU-1 IP"
+        android:textSize="30sp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/ip_xemu1_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:hint="IP # xEMU-1 Here"
+        />
+
+    <Button
+        android:id="@+id/applyXemu1_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:text="Update xEMU-0 Address" />
+
+    <!-- Temperature control -->
+
+    <View
+        android:id="@+id/divider_3"
+        android:layout_width="match_parent"
+        android:layout_height="3sp"
+        android:layout_marginTop="16sp"
+        android:background="?android:attr/listDivider"/>
+
+    <Switch
+        android:id="@+id/F_C_Switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="\u2109 / \u2103"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"/>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">IVA-MCC AstroBees</string>
+
+    <string name="eva_details">EVA Details</string>
+    <string name="live_stream">Live Stream</string>
+    <string name="rover_details">Rover Details</string>
+    <string name="single_telemetry">Single Telemetry</string>
+    <string name="field_notes">Field Notes</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+    <string name="default_argos_address">http://192.168.5.50:8123</string>
+    <string name="default_xemu0_address">http://192.168.5.200:3000</string>
+    <string name="default_xemu1_address">http://192.168.5.201:3000</string>
+
+    <string name="twitch_address">https://www.twitch.tv/ubaltastrobees</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="beacon_distance_unknown">--- TBD ---</string>
+    <string name="beacon_availability">--- Wait for status ---</string>
+
+    <string-array name="presets_choices">
+        <item>NASA SUITS Final Coordinates</item>
+        <item>UBalt</item>
+        <item>Home</item>
+    </string-array>
+
+    <string-array name="eva_commands">
+        <item>Choose a command to issue</item>
+        <item>Hey ARGOS, close science sampling</item>
+        <item>Hey ARGOS, navigate to lander</item>
+        <item>Hey ARGOS, save this location</item>
+        <item>Hey ARGOS, go to step 1</item>
+        <item>Hey ARGOS, go to step 2</item>
+        <item>Hey ARGOS, go to step 3</item>
+        <item>Hey ARGOS, go to step 4</item>
+        <item>Hey ARGOS, go to step 5</item>
+        <item>Hey ARGOS, go to step 6</item>
+        <item>Hey ARGOS, go to step 7</item>
+        <item>Hey ARGOS, open toolkit</item>
+        <item>Hey ARGOS, close toolkit</item>
+        <item>Hey ARGOS, start animation</item>
+        <item>Hey ARGOS, stop animation</item>
+        <item>Hey ARGOS, remove all warnings</item>
+        <item>Hey ARGOS, cancel navigation</item>
+        <item>Hey ARGOS, show telemetry page 2</item>>
+        <item>Hey ARGOS, show astronaut 2</item>
+    </string-array>
+</resources>

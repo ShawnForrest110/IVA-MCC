@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BeaconsFragment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:text="Beacons"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16sp"
+        android:background="?android:attr/listDivider"/>
+
+    <LinearLayout
+        android:id="@+id/beacon0_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beacon 0 (SW)"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"
+            />
+
+        <TextView
+            android:id="@+id/beacon0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beacon_availability"
+            android:textSize="30sp"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/beacon1_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beacon 1 (NW)"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"
+            />
+
+        <TextView
+            android:id="@+id/beacon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beacon_availability"
+            android:textSize="30sp"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/beacon2_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beacon 2 (NE)"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"
+            />
+
+        <TextView
+            android:id="@+id/beacon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beacon_availability"
+            android:textSize="30sp"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/beacon3_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beacon 3 (SE)"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"
+            />
+
+        <TextView
+            android:id="@+id/beacon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beacon_availability"
+            android:textSize="30sp"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16sp"
+        android:background="?android:attr/listDivider"/>
+
+
+    <LinearLayout
+        android:id="@+id/sw_nw_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SW-NW"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"
+            />
+
+        <TextView
+            android:id="@+id/sw_nw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beacon_distance_unknown"
+            android:textSize="25sp"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sw_ne_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SW-NE"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"
+            />
+
+        <TextView
+            android:id="@+id/sw_ne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beacon_distance_unknown"
+            android:textSize="25sp"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sw_se_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SW-SE"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"
+            />
+
+        <TextView
+            android:id="@+id/sw_se"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beacon_distance_unknown"
+            android:textSize="25sp"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nw_ne_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NW-NE"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"
+            />
+
+        <TextView
+            android:id="@+id/nw_ne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beacon_distance_unknown"
+            android:textSize="25sp"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nw_se_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NW-SE"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"
+            />
+
+        <TextView
+            android:id="@+id/nw_se"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beacon_distance_unknown"
+            android:textSize="25sp"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ne_se_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NE-SE"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"
+            />
+
+        <TextView
+            android:id="@+id/ne_se"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beacon_distance_unknown"
+            android:textSize="25sp"
+            android:layout_marginTop="16sp"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

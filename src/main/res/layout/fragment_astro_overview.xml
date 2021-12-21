@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AstroOverviewFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/layout_astro_1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="16sp"-->
+<!--            android:layout_weight="0.5">-->
+
+
+            <TextView
+                android:id="@+id/astro1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xEMU-1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/battery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/beat"
+                android:text="Battery Usage"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/beat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/astro1"
+                android:text="Heart Beat"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Oxygen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/battery"
+                android:text="Oxygen"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Pressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Oxygen"
+                android:text="Pressure"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Pressure"
+                android:text="More Details" />
+<!--        </RelativeLayout>-->
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/layout_astro_2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="16sp"-->
+<!--            android:layout_weight="0.5">-->
+
+            <TextView
+                android:id="@+id/astro2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xEMU-2"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/battery2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/astro2"
+                android:text="Battery Percentage"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/beat2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/battery2"
+                android:text="Heart Beat"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Oxygen2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/beat2"
+                android:text="Oxygen"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Pressure2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Oxygen2"
+                android:text="Pressure"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Pressure2"
+                android:text="More Details" />
+<!--        </RelativeLayout>-->
+
+        <LinearLayout
+            android:id="@+id/sandbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/evaControlsBackground"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Systems Controls Panel"
+                android:textColor="@color/evaControlsHeading"
+                android:textStyle="bold"
+                android:textSize="32dp"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/sandbox_start_eva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/evaButtonColor"
+                    android:layout_margin="5dp"
+                    android:text="Start EVA" />
+
+                <Button
+                    android:id="@+id/sandbox_pause_eva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/evaButtonColor"
+                    android:layout_margin="5dp"
+                    android:text="Pause EVA" />
+
+                <Button
+                    android:id="@+id/sandbox_resume_eva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/evaButtonColor"
+                    android:layout_margin="5dp"
+                    android:text="Resume EVA" />
+
+                <Button
+                    android:id="@+id/sandbox_stop_eva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/evaButtonColor"
+                    android:layout_margin="5dp"
+                    android:text="Stop EVA" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/sandbox_check_argos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/evaButtonColor"
+                    android:layout_margin="5dp"
+                    android:text="Check ARGOS" />
+
+                <Button
+                    android:id="@+id/sandbox_check_xemu0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/evaButtonColor"
+                    android:layout_margin="5dp"
+                    android:text="Check xEMU-0" />
+
+                <Button
+                    android:id="@+id/sandbox_check_xemu1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/evaButtonColor"
+                    android:layout_margin="5dp"
+                    android:text="Check xEMU-1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/sandbox_start_uia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/evaButtonColor"
+                    android:layout_margin="5dp"
+                    android:text="Start UIA" />
+
+                <Button
+                    android:id="@+id/sandbox_pause_uia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/evaButtonColor"
+                    android:layout_margin="5dp"
+                    android:text="Pause UIA" />
+
+                <Button
+                    android:id="@+id/sandbox_resume_uia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/evaButtonColor"
+                    android:layout_margin="5dp"
+                    android:text="Resume UIA" />
+
+                <Button
+                    android:id="@+id/sandbox_stop_uia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/evaButtonColor"
+                    android:layout_margin="5dp"
+                    android:text="Stop UIA" />
+            </LinearLayout>
+
+            <!-- <Button
+                android:id="@+id/sandbox_get_telemetry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Telemetry" />
+
+            <ToggleButton
+                android:id="@+id/sandbox_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" /> -->
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

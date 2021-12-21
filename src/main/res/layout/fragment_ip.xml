@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IPFragment">
+
+
+    <TextView
+        android:id="@+id/IPs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+
+        android:text="IP Addresses"
+        android:textSize="40dp"
+
+        />
+
+    <TextView
+        android:id="@+id/Argos_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/IPs"
+        android:textSize="20dp"
+        android:text="Argos Ip"/>
+
+    <TextView
+        android:id="@+id/xEmu0_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/Argos_ip"
+        android:textSize="20dp"
+        android:text="xEmu0 Ip"/>
+
+    <TextView
+        android:id="@+id/xEmu1_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/xEmu0_ip"
+        android:textSize="20dp"
+        android:text="xEmu1 Ip"/>
+
+</RelativeLayout>

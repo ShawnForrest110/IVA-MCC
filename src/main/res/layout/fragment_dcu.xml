@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16sp"
+    tools:context=".DCUFragment">
+
+    <TextView
+        android:id="@+id/dcu_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:layout_alignParentTop="true"
+        android:text="DCU xEMU-0" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16sp"
+        android:layout_marginBottom="16sp"
+        android:layout_below="@id/dcu_header"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/suit_pwr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suit Power"
+        android:textSize="24sp"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/divider"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="225dp"
+        />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/divider"
+        android:layout_toRightOf="@+id/suit_pwr"
+        android:layout_alignTop="@+id/suit_pwr"
+        android:layout_alignBottom="@+id/suit_pwr"
+        android:text=""
+        android:switchMinWidth="56dp"
+        android:textOff="Off"
+        android:textOn="On" />
+
+    <TextView
+        android:id="@+id/fan_swt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fan Switch"
+        android:textSize="24sp"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/suit_pwr"
+        android:layout_alignParentLeft="true"
+        />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/switch1"
+        android:layout_toRightOf="@+id/fan_swt"
+        android:layout_alignTop="@+id/fan_swt"
+        android:layout_alignBottom="@+id/fan_swt"
+        android:layout_alignEnd="@+id/switch1"
+        android:text=""
+        android:switchMinWidth="56dp"
+        android:textOff="Off"
+        android:textOn="On" />
+
+    <TextView
+        android:id="@+id/o2_swt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O2 Switch"
+        android:textSize="24sp"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/fan_swt"
+        android:layout_alignParentLeft="true"
+        />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/switch2"
+        android:layout_toRightOf="@+id/o2_swt"
+        android:layout_alignTop="@+id/o2_swt"
+        android:layout_alignBottom="@+id/o2_swt"
+        android:layout_alignEnd="@+id/switch1"
+        android:text=""
+        android:switchMinWidth="56dp"
+        android:textOff="Off"
+        android:textOn="On" />
+
+    <TextView
+        android:id="@+id/rca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RCA"
+        android:textSize="24sp"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/divider"
+        android:layout_toRightOf="@+id/switch1"
+        android:layout_alignTop="@+id/switch1"
+        android:layout_alignBottom="@+id/switch1"
+        android:layout_marginLeft="15dp"
+        />
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/divider"
+        android:layout_toRightOf="@+id/rca"
+        android:layout_alignTop="@+id/rca"
+        android:layout_alignBottom="@+id/rca"
+        android:layout_alignEnd="@+id/switch6"
+        android:layout_alignParentEnd="true"
+        android:text=""
+        android:switchMinWidth="56dp"
+        android:textOff="Off"
+        android:textOn="On" />
+
+    <TextView
+        android:id="@+id/aux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AUX"
+        android:textSize="24sp"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/rca"
+        android:layout_toRightOf="@+id/switch2"
+        android:layout_alignTop="@+id/switch2"
+        android:layout_alignBottom="@+id/switch2"
+        android:layout_marginLeft="15dp"
+        />
+
+    <Switch
+        android:id="@+id/switch5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/switch4"
+        android:layout_toRightOf="@+id/aux"
+        android:layout_alignTop="@+id/aux"
+        android:layout_alignBottom="@+id/aux"
+        android:layout_alignEnd="@+id/switch6"
+        android:layout_alignParentEnd="true"
+        android:text=""
+        android:switchMinWidth="56dp"
+        android:textOff="Off"
+        android:textOn="On" />
+
+    <TextView
+        android:id="@+id/pump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pump"
+        android:textSize="24sp"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/aux"
+        android:layout_toRightOf="@+id/switch3"
+        android:layout_alignTop="@+id/switch3"
+        android:layout_alignBottom="@+id/switch3"
+        android:layout_marginLeft="15dp"
+        />
+
+    <Switch
+        android:id="@+id/switch6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/switch5"
+        android:layout_toRightOf="@+id/pump"
+        android:layout_alignTop="@+id/pump"
+        android:layout_alignBottom="@+id/pump"
+        android:layout_alignParentEnd="true"
+        android:text=""
+        android:switchMinWidth="56dp"
+        android:textOff="Off"
+        android:textOn="On" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16sp"
+        android:layout_marginBottom="16sp"
+        android:layout_below="@+id/o2_swt"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/dcu_header2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:layout_below="@+id/divider2"
+        android:text="DCU xEMU-1" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16sp"
+        android:layout_marginBottom="16sp"
+        android:layout_below="@+id/dcu_header2"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/suit_pwr_dcu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suit Power"
+        android:textSize="24sp"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/divider3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="225dp"
+        />
+
+    <Switch
+        android:id="@+id/switch1_dcu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/divider3"
+        android:layout_toRightOf="@+id/suit_pwr_dcu2"
+        android:layout_alignTop="@+id/suit_pwr_dcu2"
+        android:layout_alignBottom="@+id/suit_pwr_dcu2"
+        android:checked="false"
+        android:text=""
+        android:switchMinWidth="56dp"
+        android:textOff="Off"
+        android:textOn="On" />
+
+    <TextView
+        android:id="@+id/fan_swt_dcu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fan Switch"
+        android:textSize="24sp"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/suit_pwr_dcu2"
+        android:layout_alignParentLeft="true"
+        />
+
+    <Switch
+        android:id="@+id/switch2_dcu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/switch1_dcu2"
+        android:layout_toRightOf="@+id/fan_swt_dcu2"
+        android:layout_alignTop="@+id/fan_swt_dcu2"
+        android:layout_alignBottom="@+id/fan_swt_dcu2"
+        android:layout_alignEnd="@+id/switch1"
+        android:checked="false"
+        android:text=""
+        android:switchMinWidth="56dp"
+        android:textOff="Off"
+        android:textOn="On" />
+
+    <TextView
+        android:id="@+id/o2_swt_dcu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O2 Switch"
+        android:textSize="24sp"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/fan_swt_dcu2"
+        android:layout_alignParentLeft="true"
+        />
+
+    <Switch
+        android:id="@+id/switch3_dcu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/switch2_dcu2"
+        android:layout_toRightOf="@+id/o2_swt_dcu2"
+        android:layout_alignTop="@+id/o2_swt_dcu2"
+        android:layout_alignBottom="@+id/o2_swt_dcu2"
+        android:layout_alignEnd="@+id/switch1"
+        android:checked="false"
+        android:text=""
+        android:switchMinWidth="56dp"
+        android:textOff="Off"
+        android:textOn="On" />
+
+    <TextView
+        android:id="@+id/rca_dcu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RCA"
+        android:textSize="24sp"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/divider3"
+        android:layout_toRightOf="@+id/switch1_dcu2"
+        android:layout_alignTop="@+id/switch1_dcu2"
+        android:layout_alignBottom="@+id/switch1_dcu2"
+        android:layout_marginLeft="15dp"
+        />
+
+    <Switch
+        android:id="@+id/switch4_dcu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/divider3"
+        android:layout_toRightOf="@+id/rca_dcu2"
+        android:layout_alignTop="@+id/rca_dcu2"
+        android:layout_alignBottom="@+id/rca_dcu2"
+        android:layout_alignEnd="@+id/switch6"
+        android:layout_alignParentEnd="true"
+        android:checked="false"
+        android:text=""
+        android:switchMinWidth="56dp"
+        android:textOff="Off"
+        android:textOn="On" />
+
+    <TextView
+        android:id="@+id/aux_dcu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AUX"
+        android:textSize="24sp"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/rca_dcu2"
+        android:layout_toRightOf="@+id/switch2_dcu2"
+        android:layout_alignTop="@+id/switch2_dcu2"
+        android:layout_alignBottom="@+id/switch2_dcu2"
+        android:layout_marginLeft="15dp"
+        />
+
+    <Switch
+        android:id="@+id/switch5_dcu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/switch4_dcu2"
+        android:layout_toRightOf="@+id/aux_dcu2"
+        android:layout_alignTop="@+id/aux_dcu2"
+        android:layout_alignBottom="@+id/aux_dcu2"
+        android:layout_alignEnd="@+id/switch6"
+        android:layout_alignParentEnd="true"
+        android:checked="false"
+        android:text=""
+        android:switchMinWidth="56dp"
+        android:textOff="Off"
+        android:textOn="On" />
+
+    <TextView
+        android:id="@+id/pump_dcu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pump"
+        android:textSize="24sp"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/aux_dcu2"
+        android:layout_toRightOf="@+id/switch3_dcu2"
+        android:layout_alignTop="@+id/switch3_dcu2"
+        android:layout_alignBottom="@+id/switch3_dcu2"
+        android:layout_marginLeft="15dp"
+        />
+
+    <Switch
+        android:id="@+id/switch6_dcu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/switch5_dcu2"
+        android:layout_toRightOf="@+id/pump_dcu2"
+        android:layout_alignTop="@+id/pump_dcu2"
+        android:layout_alignBottom="@+id/pump_dcu2"
+        android:layout_alignParentEnd="true"
+        android:checked="false"
+        android:text=""
+        android:switchMinWidth="56dp"
+        android:textOff="Off"
+        android:textOn="On" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16sp"
+        android:layout_marginBottom="16sp"
+        android:layout_below="@id/o2_swt_dcu2"
+        android:background="?android:attr/listDivider" />
+
+</RelativeLayout>
